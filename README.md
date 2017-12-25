@@ -34,7 +34,7 @@ puts 'Hello World!'
 ### Keywords
 ```ruby
 __ENCODING__ #The script encoding of the current file
-__LINE__     #The line number of t
+__LINE__     #The line number of this keyword in the current file
 def          #Defines a method
 defined?     #Returns a string describing its argument
 do           #Starts a blockhis keyword in the current file

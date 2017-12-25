@@ -37,7 +37,7 @@ def          #Defines a method
 defined?     #Returns a string describing its argument
 do           #Starts a block
 else         #The unhandled condition in case, if and unless expressions
-elsif       #An alternate condition for an if expression
+elsif        #An alternate condition for an if expression
 end          #The end of a syntax block.
 ensure       #Starts a section of code that is always run when an exception is raised
 false        #Boolean false
@@ -69,15 +69,11 @@ yield        #Starts execution of the block sent to the current method
 
 ### Variables
 ```ruby
-#local variable
-_age = 21
-age = 21
-#instance variable
-@age = 21
-#class variable
-@@age = 21
-#global variable
-$age = 21
+_age = 21    #local variable
+age = 21     #local variable
+@age = 21    #instance variable
+@@age = 21   #class variable
+$age = 21    #global variable
 ```
 [back to top](#table-of-contents)
 

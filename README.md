@@ -4,7 +4,7 @@ Ruby through code samples
 ## Table of Contents
 * [Hello World](#hello-world)
 * [Keywords](#keywords)
-* Comments (TODO)
+* [Comments](#comments)
 * [Variables](#variables)
 * Constants (TODO)
 * Basic Literals (TODO)
@@ -77,6 +77,18 @@ until        #Creates a loop that executes until the condition is true
 when         #A condition in a case expression
 while        #Creates a loop that executes while the condition is true
 yield        #Starts execution of the block sent to the current method
+```
+[back to top](#table-of-contents)
+
+
+### Comments
+```ruby
+#This is a single line comment
+
+=begin
+This is a multiline comment
+This is a multiline comment
+=end
 ```
 [back to top](#table-of-contents)
 

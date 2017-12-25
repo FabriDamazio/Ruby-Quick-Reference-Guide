@@ -9,7 +9,7 @@ Ruby through code samples
 * [Constants](#constants)
 * Basic Literals (TODO)
 * Backslash Notations (TODO)
-* Array (TODO)
+* [Array] (#arrays)
 * Hash (TODO)
 * Ranges (TODO)
 * [Class](#class)
@@ -107,6 +107,22 @@ $age = 21    #global variable
 ### Constants
 ```ruby
 AGE = 21     #constant
+```
+[back to top](#table-of-contents)
+
+### Arrays
+```ruby
+array = [] #New array
+array = Array.new(5) #New array with size 5
+
+first_item = array.first #Gets the first item of the array
+last_item = array.last #Gets the last item of the array
+
+#All the follows lines return the same: the size of the array
+array.size
+array.length
+array.count
+
 ```
 [back to top](#table-of-contents)
 

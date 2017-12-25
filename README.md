@@ -4,8 +4,22 @@ Ruby through code samples
 ## Table of Contents
 * [Hello World](#hello-world)
 * [Keywords](#keywords)
+* Comments (TODO)
 * [Variables](#variables)
+* Constants (TODO)
+* Basic Literals (TODO)
+* Backslash Notations (TODO)
+* Array (TODO)
+* Hash (TODO)
+* Ranges (TODO)
 * [Class](#class)
+* Operators (TODO)
+* Conditional Structures (TODO)
+* Loops (TODO)
+* Methods (TODO)
+* Blocks (TODO)
+* Modules (TODO)
+* Exceptions (TODO)
 
 
 

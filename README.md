@@ -6,7 +6,7 @@ Ruby through code samples
 * [Keywords](#keywords)
 * [Comments](#comments)
 * [Variables](#variables)
-* Constants (TODO)
+* [Constants](#constants)
 * Basic Literals (TODO)
 * Backslash Notations (TODO)
 * Array (TODO)
@@ -58,7 +58,7 @@ false        #Boolean false
 for          #A loop that is similar to using the each method
 if           #Used for if and modifier if expressions
 in           #Used to separate the iterable object and iterator variable in a for loop
-module        #Creates or opens a module
+module       #Creates or opens a module
 next         #Skips the rest of the block
 nil          #A false value usually indicating “no value” or “unknown”
 not          #Inverts the following boolean expression. Has a lower precedence than !
@@ -100,6 +100,13 @@ age = 21     #local variable
 @age = 21    #instance variable
 @@age = 21   #class variable
 $age = 21    #global variable
+```
+[back to top](#table-of-contents)
+
+
+### Constants
+```ruby
+AGE = 21     #local variable
 ```
 [back to top](#table-of-contents)
 

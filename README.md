@@ -5,6 +5,7 @@ Ruby through code samples
 * [Hello World](#hello-world)
 * [Keywords](#keywords)
 * [Variables](#variables)
+* [Class](#class)
 
 
 
@@ -77,5 +78,13 @@ age = 21
 @@age = 21
 #global variable
 $age = 21
+```
+[back to top](#table-of-contents)
+
+
+### Class
+```ruby
+class Customer
+end
 ```
 [back to top](#table-of-contents)

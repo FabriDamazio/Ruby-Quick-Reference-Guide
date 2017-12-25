@@ -2,7 +2,15 @@
 Ruby through code samples
 
 ## Table of Contents
+* [Hello World](#hello-world)
 * [Variables](#variables)
+
+### Hello World
+```ruby
+puts 'Hello World!'
+```
+[back to top](#table-of-contents)
+
 
 ### Variables
 ```ruby

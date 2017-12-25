@@ -106,7 +106,7 @@ $age = 21    #global variable
 
 ### Constants
 ```ruby
-AGE = 21     #local variable
+AGE = 21     #constant
 ```
 [back to top](#table-of-contents)
 

@@ -37,7 +37,7 @@ __ENCODING__ #The script encoding of the current file
 __LINE__     #The line number of this keyword in the current file
 def          #Defines a method
 defined?     #Returns a string describing its argument
-do           #Starts a blockhis keyword in the current file
+do           #Starts a block
 __FILE__     #The path to the current file
 BEGIN        #Runs before any other code in the current file
 END          #Runs after any other code in the current file

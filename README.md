@@ -128,17 +128,15 @@ AGE = 21     #constant
 
 ### Arrays
 ```ruby
-array = [] #New array
-array = Array.new(5) #New array with size 5
-
-first_item = array.first #Gets the first item of the array
-last_item = array.last #Gets the last item of the array
-
-#All the follows lines return the same: the size of the array
-array.size
-array.length
-array.count
-
+array = []                  # Array
+array = Array.new(5)        # Array with size 
+names = Array.new(2, "abc") # ["abc", "abc"]
+first_item = array.first    # Array first item
+last_item = array.last      # Array last item
+array.size                  # Array size
+array.length                # Array size
+array.count                 # Array size
+array.at(5)                 # Element at index 5
 ```
 [back to top](#table-of-contents)
 

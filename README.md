@@ -9,7 +9,7 @@ Ruby through code samples
 * [Constants](#constants)
 * Basic Literals (TODO)
 * Backslash Notations (TODO)
-* [Array] (#arrays)
+* [Arrays](#arrays)
 * Hash (TODO)
 * Ranges (TODO)
 * [Class](#class)

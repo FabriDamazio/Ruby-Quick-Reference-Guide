@@ -8,6 +8,8 @@ Ruby through code samples
 * [Variables](#variables)
 * [Constants](#constants)
 * [Integer Numbers](#integer-numbers)
+* Floating Numbers (TODO)
+* Strings (TODO)
 * Backslash Notations (TODO)
 * [Arrays](#arrays)
 * Hash (TODO)

@@ -7,7 +7,7 @@ Ruby through code samples
 * [Comments](#comments)
 * [Variables](#variables)
 * [Constants](#constants)
-* Basic Literals (TODO)
+* [Integer Numbers](#integer-numbers)
 * Backslash Notations (TODO)
 * [Arrays](#arrays)
 * Hash (TODO)
@@ -109,6 +109,20 @@ $age = 21    #global variable
 AGE = 21     #constant
 ```
 [back to top](#table-of-contents)
+
+
+### Integer Numbers
+```ruby
+1234                 # Fixnum decimal
+-1234                # Negative Fixnum
+1_234                # Fixnum decimal (with underscore to improve readability)
+0b1011               # binary
+0xff                 # hexadecimal
+0377                 # octal
+12345678901234567890 # Bignum
+```
+[back to top](#table-of-contents)
+
 
 ### Arrays
 ```ruby

@@ -130,7 +130,8 @@ AGE = 21     #constant
 ```ruby
 array = []                  # Array
 array = Array.new(5)        # Array with size 
-names = Array.new(2, "abc") # ["abc", "abc"]
+array = Array.new(2, "abc") # ["abc", "abc"]
+array = Array(0..9)         # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 first_item = array.first    # Array first item
 last_item = array.last      # Array last item
 array.size                  # Array size

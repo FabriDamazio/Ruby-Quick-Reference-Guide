@@ -9,7 +9,6 @@ Ruby through code samples
 * [Constants](#constants)
 * [Integer Numbers](#integer-numbers)
 * [Floating Numbers](#floating-numbers)
-* Floating Numbers (TODO)
 * Strings (TODO)
 * Backslash Notations (TODO)
 * [Arrays](#arrays)

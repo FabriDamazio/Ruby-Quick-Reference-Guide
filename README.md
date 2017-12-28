@@ -8,6 +8,7 @@ Ruby through code samples
 * [Variables](#variables)
 * [Constants](#constants)
 * [Integer Numbers](#integer-numbers)
+* [Floating Numbers](#floating-numbers)
 * Floating Numbers (TODO)
 * Strings (TODO)
 * Backslash Notations (TODO)
@@ -125,6 +126,16 @@ AGE = 21      # constant; by convention - constants can be modified and generate
 0xff                 # hexadecimal
 0377                 # octal
 12345678901234567890 # Bignum
+```
+[back to top](#table-of-contents)
+
+
+### Floating Numbers
+```ruby
+123.4                # floating point value
+4.0e2                # 400.0 - scientific notation
+4E2                  # 400.0 - dot not required
+4e+2                 # 400.0 - sign before exponential
 ```
 [back to top](#table-of-contents)
 

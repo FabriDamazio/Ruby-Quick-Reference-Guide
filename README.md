@@ -8,6 +8,7 @@ Ruby through code samples
 * [Variables](#variables)
 * [Constants](#constants)
 * [Integer Numbers](#integer-numbers)
+* [Floating Numbers](#floating-numbers)
 * Floating Numbers (TODO)
 * Strings (TODO)
 * [Backslash Notations](#backslash-notations)
@@ -192,6 +193,16 @@ cat #{__FILE__}
 BACKTICKS
 puts str6       # Prints the results of the cat command
 ```
+
+### Floating Numbers
+```ruby
+123.4                # floating point value
+4.0e2                # 400.0 - scientific notation
+4E2                  # 400.0 - dot not required
+4e+2                 # 400.0 - sign before exponential
+```
+[back to top](#table-of-contents)
+
 
 ### Arrays
 ```ruby

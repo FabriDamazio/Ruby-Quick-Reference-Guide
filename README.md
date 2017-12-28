@@ -12,7 +12,7 @@ Ruby through code samples
 * Strings (TODO)
 * Backslash Notations (TODO)
 * [Arrays](#arrays)
-* Hash (TODO)
+* [Hash](#hash)
 * Ranges (TODO)
 * [Class](#class)
 * Operators (TODO)
@@ -158,6 +158,21 @@ array.pop                   # Remove last element from array
 array.shift                 # Remove first element from array
 array.unshift(15)           # Add 15 to beginning of array
 array.methods.sort - Object.methods   # List all Array instance methods
+```
+[back to top](#table-of-contents)
+
+### Hash
+
+```ruby
+hash = {} #Hash
+hash = Hash.new("default_value") #Initialize a hash with the string "default_value" as the default value for any key
+hash.default = "another_default_value" #Changes default value from hash
+hash.size                  # Hash size
+hash.length                # Hash size
+hash.count                 # Hash size
+array = [[:color,"blue"],[:size,"big"]]
+array.to_h #{:color => "blue", :size => "big"}
+
 ```
 [back to top](#table-of-contents)
 

@@ -14,7 +14,7 @@ Ruby through code samples
 * %Literals (TODO)
 * HERE Docs (TODO)
 * [Arrays](#arrays)
-* Hash (TODO)
+* [Hash](#hash)
 * Ranges (TODO)
 * Symbols (TODO)
 * [Class](#class)
@@ -128,6 +128,15 @@ AGE = 21      # constant; by convention - constants can be modified and generate
 ```
 [back to top](#table-of-contents)
 
+### Floating Numbers
+```ruby
+123.4                # floating point value
+4.0e2                # 400.0 - scientific notation
+4E2                  # 400.0 - dot not required
+4e+2                 # 400.0 - sign before exponential
+```
+[back to top](#table-of-contents)
+
 ### Backslash notations 
 ```ruby
 # work in "" -- interpolated -- strings
@@ -192,14 +201,6 @@ cat #{__FILE__}
 BACKTICKS
 puts str6       # Prints the results of the cat command
 ```
-
-### Floating Numbers
-```ruby
-123.4                # floating point value
-4.0e2                # 400.0 - scientific notation
-4E2                  # 400.0 - dot not required
-4e+2                 # 400.0 - sign before exponential
-```
 [back to top](#table-of-contents)
 
 
@@ -229,6 +230,22 @@ array.unshift(15)           # Add 15 to beginning of array
 array.methods.sort - Object.methods   # List all Array instance methods
 ```
 [back to top](#table-of-contents)
+
+### Hash
+
+```ruby
+hash = {} #Hash
+hash = Hash.new("default_value") #Initialize a hash with the string "default_value" as the default value for any key
+hash.default = "another_default_value" #Changes default value from hash
+hash.size                  # Hash size
+hash.length                # Hash size
+hash.count                 # Hash size
+array = [[:color,"blue"],[:size,"big"]]
+array.to_h #{:color => "blue", :size => "big"}
+
+```
+[back to top](#table-of-contents)
+
 
 ### Class
 ```ruby

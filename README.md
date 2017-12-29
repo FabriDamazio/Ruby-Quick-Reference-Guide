@@ -10,7 +10,7 @@ Ruby through code samples
 * [Integer Numbers](#integer-numbers)
 * Floating Numbers (TODO)
 * Strings (TODO)
-* [Backslash Notations] (#backslash-notations)
+* [Backslash Notations](#backslash-notations)
 * Literals (TODO)
 * [Arrays](#arrays)
 * Hash (TODO)

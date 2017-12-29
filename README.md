@@ -234,15 +234,18 @@ array.methods.sort - Object.methods   # List all Array instance methods
 ### Hash
 
 ```ruby
-hash = {} #Hash
-hash = Hash.new("default_value") #Initialize a hash with the string "default_value" as the default value for any key
-hash.default = "another_default_value" #Changes default value from hash
-hash.size                  # Hash size
-hash.length                # Hash size
-hash.count                 # Hash size
-array = [[:color,"blue"],[:size,"big"]]
-array.to_h #{:color => "blue", :size => "big"}
-
+hash = {}                         # New Hash without default value
+hash = Hash.new("default_value")  # New hash with a default value for any key
+hash.default = "another_value"    # Changes default value
+hash.size                         # Hash size
+hash.length                       # Hash size
+hash.count                        # Hash size
+hash.[1]                          # Get the value or default if key not found
+hash.clear                        # Removes all key-value pairs from hash
+hash.delete(1)                    # Deletes a key-value pair by key
+hash.empty?                       # Test if hash is empty (true or false)
+hash.invert                       # New hash with inverted key-value pairs
+hash.values                       # Returns a new array containing all the values of hash.
 ```
 [back to top](#table-of-contents)
 

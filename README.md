@@ -10,7 +10,8 @@ Ruby through code samples
 * [Integer Numbers](#integer-numbers)
 * Floating Numbers (TODO)
 * Strings (TODO)
-* Backslash Notations (TODO)
+* [Backslash Notations] (#backslash-notations)
+* Literals (TODO)
 * [Arrays](#arrays)
 * Hash (TODO)
 * Ranges (TODO)
@@ -22,6 +23,7 @@ Ruby through code samples
 * Blocks (TODO)
 * Modules (TODO)
 * Exceptions (TODO)
+* I/O (TODO)
 
 
 
@@ -36,15 +38,17 @@ puts 'Hello World!'
 ### Keywords
 ```ruby
 __ENCODING__  # The script encoding of the current file
-__LINE__      # The line number of this keyword in the current file
-def           # Defines a method
-defined?      # Returns a string describing its argument
-do            # Starts a block
+__END__       # Marks the end of the Ruby program; DATA can follow  
 __FILE__      # The path to the current file
+__LINE__      # The line number of this keyword in the current file
+
 BEGIN         # Runs before any other code in the current file
 END           # Runs after any other code in the current file
 DATA          # An IO stream to read data embedded in the program following __END__
-__END__       # Marks the end of the Ruby program; DATA can follow  
+
+def           # Defines a method
+defined?      # Returns a string describing its argument
+do            # Starts a block
 alias         # Creates an alias between two methods (and other things)
 and           # Short-circuit Boolean and with lower precedence than &&
 begin         # Starts an exception handling block
@@ -128,6 +132,26 @@ AGE = 21      # constant; by convention - constants can be modified and generate
 ```
 [back to top](#table-of-contents)
 
+### Backslash notations
+```ruby
+\n          # Newline (0x0a)
+\r          # Carriage return (0x0d)
+\f          # Formfeed (0x0c)
+\b          # Backspace (0x08)
+\a          # Bell (0x07)
+\e          # Escape (0x1b)
+\s          # Space (0x20)
+\x          # Character x``
+\nnn        # Octal (n = 0-7)
+\xnn        # Hesadecimal (n = 0-9, a-f, A-F)
+\cx, \C-x   # Control-x
+\M-x        # Meta x 
+\M-\C-x     # Meta-Control-x
+\unnnn      # Unicode code point U+nnnn (Ruby 1.9+)
+
+
+```
+[back to top](#table-of-contents)
 
 ### Arrays
 ```ruby

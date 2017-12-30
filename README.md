@@ -27,11 +27,15 @@ Ruby through code samples
 * Exceptions (TODO)
 * I/O (TODO)
 
+---
+
 ### Hello World
 ```ruby
 puts 'Hello World!'
 ```
 [back to top](#table-of-contents)
+
+---
 
 ### Keywords
 ```ruby
@@ -88,6 +92,8 @@ yield         # Starts execution of the block sent to the current method
 ```
 [back to top](#table-of-contents)
 
+---
+
 ### Comments
 ```ruby
 #This is a single line comment
@@ -98,6 +104,8 @@ This is a multiline comment
 =end
 ```
 [back to top](#table-of-contents)
+
+---
 
 ### Variables
 ```ruby
@@ -110,23 +118,29 @@ $age = 21     # global variable
 ```
 [back to top](#table-of-contents)
 
+---
+
 ### Constants
 ```ruby
 AGE = 21      # constant; by convention - constants can be modified and generate a warning
 ```
 [back to top](#table-of-contents)
 
+---
+
 ### Integer Numbers
 ```ruby
-1234                 # Fixnum decimal
--1234                # Negative Fixnum
-1_234                # Fixnum decimal (with underscore to improve readability)
-0b1011               # binary
-0xff                 # hexadecimal
-0377                 # octal
-12345678901234567890 # Bignum
+1234                  # Fixnum decimal
+-1234                 # Negative Fixnum
+1_234                 # Fixnum decimal (with underscore to improve readability)
+0b1011                # binary
+0xff                  # hexadecimal
+0377                  # octal
+12345678901234567890  # Bignum
 ```
 [back to top](#table-of-contents)
+
+---
 
 ### Floating Numbers
 ```ruby
@@ -159,6 +173,8 @@ puts "\u2713"        # Unicode code point U+nnnn (Ruby 1.9+); prints "✓"
 
 ```
 [back to top](#table-of-contents)
+
+---
 
 ### HERE Docs
 ```ruby
@@ -203,33 +219,31 @@ puts str6       # Prints the results of the cat command
 ```
 [back to top](#table-of-contents)
 
+---
 
 ### Arrays
 ```ruby
-array = []                  # Array; zero-based indexing
-array = Array.new(5)        # Array with size 
-array = Array.new(2, "abc") # ["abc", "abc"]
-array = Array(0..9)         # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-# Using string literals
-num = 5
-array = %w{a b c #{num}}    # ["a", "b", "c", "\#{num}"]
-array = %W{a b c #{num}}    # ["a", "b", "c", "5"]
-
-first_item = array.first    # Array first item
-first_item = array[0]       # Array first item
-last_item = array.last      # Array last item
-last_item = array[array.size - 1]   # Array last_item
-array.size                  # Array size
-array.length                # Array size
-array.count                 # Array size
-array.at(5)                 # Element at index 5
-array.push(42)              # Add 42 to end of array
-array.pop                   # Remove last element from array
-array.shift                 # Remove first element from array
-array.unshift(15)           # Add 15 to beginning of array
+array = []                            # Array; zero-based indexing
+array = Array.new(5)                  # Array with size 
+array = Array.new(2, "abc")           # ["abc", "abc"]
+array = Array(0..9)                   # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+first_item = array.first              # Array first item
+first_item = array[0]                 # Array first item
+last_item = array.last                # Array last item
+array[array.size - 1]                 # Array last_item
+array.size                            # Array size
+array.length                          # Array size
+array.count                           # Array size
+array.at(5)                           # Element at index 5
+array.push(42)                        # Add 42 to end of array
+array.pop                             # Remove last element from array
+array.shift                           # Remove first element from array
+array.unshift(15)                     # Add 15 to beginning of array
 array.methods.sort - Object.methods   # List all Array instance methods
 ```
 [back to top](#table-of-contents)
+
+---
 
 ### Hash
 
@@ -249,6 +263,7 @@ hash.values                       # Returns a new array containing all the value
 ```
 [back to top](#table-of-contents)
 
+---
 
 ### Class
 ```ruby

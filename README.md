@@ -166,9 +166,9 @@ AGE = 21      # constant; by convention - constants can be modified and generate
 \nnn                # Octal (n = 0-7)
 \xnn                # Hesadecimal (n = 0-9, a-f, A-F)
 \cx, \C-x           # Control-x
-"\M-x"              # Meta x; usually used for keyboard/terminal control
-"\M-\C-x"           # Meta-Control-x; usually used for keyboard/terminal control
-puts "\u2713"       # Unicode code point U+nnnn (Ruby 1.9+); prints "✓"
+\M-x                # Meta x; usually used for keyboard/terminal control
+\M-\C-x             # Meta-Control-x; usually used for keyboard/terminal control
+\unnnn              # Unicode code point U+nnnn (Ruby 1.9+)
 puts "ln1\nln2"     # Newline (0x0a); prints two lines
 puts "n123\rab"     # Carriage return (0x0d); prints one line, overlaid
 puts "f12\f345"     # Formfeed (0x0c); prints two lines, offset
@@ -181,6 +181,7 @@ puts "ab\015x"      # Octal (n = 0-7); prints 'xb', same as \r
 puts "ab\xdx"       # Hesadecimal (n = 0-9, a-f, A-F); prints 'xb', same as \r
 puts "abc\C-Hxyz"   # Control-x; prints 'abxyz', same as \b; \C-@ == \x00, \C-A == \x01, ...
 puts "abc\C-Hxyz"   # Control-x; prints 'abxyz', same as \b; \C-@ == \x00, \C-A == \x01, ...  
+puts "\u2713"       # Unicode code point U+nnnn (Ruby 1.9+); prints "✓"
 ```
 [ASCII complete list](https://www.cisco.com/c/en/us/td/docs/ios/12_2/configfun/command/reference/ffun_r/frf019.pdf)
 
@@ -229,6 +230,7 @@ cat #{__FILE__}
 BACKTICKS
 puts str6       # Prints the results of the cat command
 ```
+[back to top](#table-of-contents)
 
 ---
 

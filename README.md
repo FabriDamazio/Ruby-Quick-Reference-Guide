@@ -12,7 +12,7 @@ Ruby through code samples
 * Strings (TODO)
 * [Backslash Notations](#backslash-notations)
 * %Literals (TODO)
-* HERE Docs (TODO)
+* [HERE Docs](#here-docs)
 * [Arrays](#arrays)
 * [Hash](#hash)
 * Ranges (TODO)
@@ -155,7 +155,20 @@ AGE = 21      # constant; by convention - constants can be modified and generate
 
 ### Backslash notations 
 ```ruby
-# work in "" -- interpolated -- strings
+\n                  # Newline (0x0a)
+\r                  # Carriage return (0x0d)
+\f                  # Formfeed (0x0c)
+\b                  # Backspace (0x08)
+\a                  # Bell (0x07)
+\e                  # Escape (0x1b)
+\s                  # Space (0x20)
+\x                  # Character x``
+\nnn                # Octal (n = 0-7)
+\xnn                # Hesadecimal (n = 0-9, a-f, A-F)
+\cx, \C-x           # Control-x
+"\M-x"              # Meta x; usually used for keyboard/terminal control
+"\M-\C-x"           # Meta-Control-x; usually used for keyboard/terminal control
+puts "\u2713"       # Unicode code point U+nnnn (Ruby 1.9+); prints "✓"
 puts "ln1\nln2"     # Newline (0x0a); prints two lines
 puts "n123\rab"     # Carriage return (0x0d); prints one line, overlaid
 puts "f12\f345"     # Formfeed (0x0c); prints two lines, offset
@@ -166,15 +179,11 @@ puts "ab\scd"       # Space (0x20); prints 'ab cd'
 puts "ab\xcd"       # Character x; prints 'abxcd'
 puts "ab\015x"      # Octal (n = 0-7); prints 'xb', same as \r
 puts "ab\xdx"       # Hesadecimal (n = 0-9, a-f, A-F); prints 'xb', same as \r
-puts "abc\C-Hxyz"   # Control-x; prints 'abxyz', same as \b; \C-@ == \x00, \C-A == \x01, ...  [see complete list here](https://www.cisco.com/c/en/us/td/docs/ios/12_2/configfun/command/reference/ffun_r/frf019.pdf)
+puts "abc\C-Hxyz"   # Control-x; prints 'abxyz', same as \b; \C-@ == \x00, \C-A == \x01, ...
 puts "abc\C-Hxyz"   # Control-x; prints 'abxyz', same as \b; \C-@ == \x00, \C-A == \x01, ...  
 ```
-[see complete list here](https://www.cisco.com/c/en/us/td/docs/ios/12_2/configfun/command/reference/ffun_r/frf019.pdf)
-```ruby
-"\M-x"              # Meta x; usually used for keyboard/terminal control
-"\M-\C-x"           # Meta-Control-x; usually used for keyboard/terminal control
-puts "\u2713"       # Unicode code point U+nnnn (Ruby 1.9+); prints "✓"
-```
+[ASCII complete list](https://www.cisco.com/c/en/us/td/docs/ios/12_2/configfun/command/reference/ffun_r/frf019.pdf)
+
 [back to top](#table-of-contents)
 
 ---
@@ -220,7 +229,6 @@ cat #{__FILE__}
 BACKTICKS
 puts str6       # Prints the results of the cat command
 ```
-[back to top](#table-of-contents)
 
 ---
 
@@ -230,11 +238,6 @@ array = []                            # Array; zero-based indexing
 array = Array.new(5)                  # Array with size 
 array = Array.new(2, "abc")           # ["abc", "abc"]
 array = Array(0..9)                   # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-# Using string literals
-num = 5
-array = %w{a b c #{num}}    # ["a", "b", "c", "\#{num}"]
-array = %W{a b c #{num}}    # ["a", "b", "c", "5"]
-
 first_item = array.first              # Array first item
 first_item = array[0]                 # Array first item
 last_item = array.last                # Array last item
@@ -248,6 +251,8 @@ array.pop                             # Remove last element from array
 array.shift                           # Remove first element from array
 array.unshift(15)                     # Add 15 to beginning of array
 array.methods.sort - Object.methods   # List all Array instance methods
+array = %w{a b c #{num}}              # ["a", "b", "c", "\#{num}"]
+array = %W{a b c #{num}}              # ["a", "b", "c", "5"] (if num = 5)
 ```
 [back to top](#table-of-contents)
 

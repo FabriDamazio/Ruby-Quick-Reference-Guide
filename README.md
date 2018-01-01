@@ -11,7 +11,7 @@ Ruby through code samples
 * [Floating Numbers](#floating-numbers)
 * Strings (TODO)
 * [Backslash Notations](#backslash-notations)
-* [%Literals](#%literals)
+* [Percent Literals](#percent-literals)
 * [HERE Docs](#here-docs)
 * [Arrays](#arrays)
 * [Hash](#hash)

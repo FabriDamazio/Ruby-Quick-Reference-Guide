@@ -153,7 +153,8 @@ AGE = 21      # constant; by convention - constants can be modified and generate
 
 ---
 
-### Backslash notations (escaped characters)
+### Backslash notations
+(also ''escaped characters')
 ```ruby
 \n                  # Newline (0x0a)
 \r                  # Carriage return (0x0d)

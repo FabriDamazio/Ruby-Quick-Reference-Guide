@@ -189,7 +189,7 @@ puts "\u2713"       # Unicode code point U+nnnn (Ruby 1.9+); prints "✓"
 
 --- 
 
-### %Literals
+### Percent Literals
 ```ruby
 # can use any paired delimiters
 # Uppercase versions (as in %I, %Q) allow interpolation and escaped characters

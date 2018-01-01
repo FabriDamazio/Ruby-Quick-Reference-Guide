@@ -11,7 +11,7 @@ Ruby through code samples
 * [Floating Numbers](#floating-numbers)
 * Strings (TODO)
 * [Backslash Notations](#backslash-notations)
-* %Literals (TODO)
+* [Percent Literals](#percent-literals)
 * [HERE Docs](#here-docs)
 * [Arrays](#arrays)
 * [Hash](#hash)
@@ -153,7 +153,8 @@ AGE = 21      # constant; by convention - constants can be modified and generate
 
 ---
 
-### Backslash notations 
+### Backslash notations
+(also ''escaped characters')
 ```ruby
 \n                  # Newline (0x0a)
 \r                  # Carriage return (0x0d)
@@ -170,7 +171,7 @@ AGE = 21      # constant; by convention - constants can be modified and generate
 \M-\C-x             # Meta-Control-x; usually used for keyboard/terminal control
 \unnnn              # Unicode code point U+nnnn (Ruby 1.9+)
 puts "ln1\nln2"     # Newline (0x0a); prints two lines
-puts "n123\rab"     # Carriage return (0x0d); prints one line, overlaid
+puts "n123\rab"     # Carriage return (0x0d); prints one line, "ab23"
 puts "f12\f345"     # Formfeed (0x0c); prints two lines, offset
 puts "abc\bx"       # Backspace (0x08); prints 'abx'
 puts "bell\a\a\a"   # Bell (0x07); prints 'bell' and rings bell three times
@@ -179,12 +180,28 @@ puts "ab\scd"       # Space (0x20); prints 'ab cd'
 puts "ab\xcd"       # Character x; prints 'abxcd'
 puts "ab\015x"      # Octal (n = 0-7); prints 'xb', same as \r
 puts "ab\xdx"       # Hesadecimal (n = 0-9, a-f, A-F); prints 'xb', same as \r
-puts "abc\C-Hxyz"   # Control-x; prints 'abxyz', same as \b; \C-@ == \x00, \C-A == \x01, ...
 puts "abc\C-Hxyz"   # Control-x; prints 'abxyz', same as \b; \C-@ == \x00, \C-A == \x01, ...  
 puts "\u2713"       # Unicode code point U+nnnn (Ruby 1.9+); prints "✓"
 ```
 [ASCII complete list](https://www.cisco.com/c/en/us/td/docs/ios/12_2/configfun/command/reference/ffun_r/frf019.pdf)
 
+[back to top](#table-of-contents)
+
+--- 
+
+### Percent Literals
+```ruby
+# can use any paired delimiters
+# Uppercase versions (as in %I, %Q) allow interpolation and escaped characters
+%i{foo bar baz}     # Array of Symbols: [:foo, :bar, :baz]
+%q(use a " here}    # Strings: "use a \" here"
+%{...}              # Alternative Strings notation
+%r                  # RegExp: "this is a fixit"
+  "this is a test".sub(%r{t??t}, 'fixit'})
+%s{fancy symbol}    # Symbol: :"fancy symbol" (not recommended)
+%w{foo bar baz}     # Array of Strings: ["foo", "bar", "baz"]
+%x{cat __FILE}      # Backtick: the contents of the current file
+```
 [back to top](#table-of-contents)
 
 ---

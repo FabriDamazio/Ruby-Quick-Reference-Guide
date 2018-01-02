@@ -332,12 +332,12 @@ a.equal?b       # Check if the the objects have the same id
 
 # Logical Operators
 a && b # "and" operator (higher precedence)
-a and b # "and" operator (lower precedence)
+a and b # "and" operator 
 
 a || b # "or" operator (higher precedence)
-a or b # "or" operator (lower precedence)
+a or b # "or" operator 
 
 !a # Negation operator (higher precedence)
-not a # Negation operator (lower precedence)
+not a # Negation operator
 ```
 [back to top](#table-of-contents)

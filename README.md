@@ -193,14 +193,16 @@ puts "\u2713"       # Unicode code point U+nnnn (Ruby 1.9+); prints "✓"
 ```ruby
 # can use any paired delimiters
 # Uppercase versions (as in %I, %Q) allow interpolation and escaped characters
-%i{foo bar baz}     # Array of Symbols: [:foo, :bar, :baz]
+baz = "abc"
+%I{foo bar #{baz}}  # Array of Symbols: [:foo, :bar, :abc]
+%i{foo bar #{baz}}  # Array of Symbols: [:foo, :bar, :"\#{baz}"]
 %q(use a " here}    # Strings: "use a \" here"
 %{...}              # Alternative Strings notation
 %r                  # RegExp: "this is a fixit"
   "this is a test".sub(%r{t??t}, 'fixit'})
 %s{fancy symbol}    # Symbol: :"fancy symbol" (not recommended)
 %w{foo bar baz}     # Array of Strings: ["foo", "bar", "baz"]
-%x{cat __FILE}      # Backtick: the contents of the current file
+%x{cat __FILE__}    # Backtick: the contents of the current file
 ```
 [back to top](#table-of-contents)
 

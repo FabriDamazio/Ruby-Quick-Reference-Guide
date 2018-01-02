@@ -288,7 +288,7 @@ hash.default = "another_value"    # Changes default value
 hash.size                         # Hash size
 hash.length                       # Hash size
 hash.count                        # Hash size
-hash.[1]                          # Get the value or default if key not found
+hash[1]                          # Get the value or default if key not found
 hash.clear                        # Removes all key-value pairs from hash
 hash.delete(1)                    # Deletes a key-value pair by key
 hash.empty?                       # Test if hash is empty (true or false)
@@ -329,5 +329,15 @@ a <==> b        # Returns 0 if first operand equals second, 1 if greater and -1 
 (1...10) === 5  # Used to test equality within a when clause of a case statement
 a.eql?(b)       # Check if the type and value are equals
 a.equal?b       # Check if the the objects have the same id
+
+# Logical Operators
+a && b # "and" operator (higher precedence)
+a and b # "and" operator (lower precedence)
+
+a || b # "or" operator (higher precedence)
+a or b # "or" operator (lower precedence)
+
+!a # Negation operator (higher precedence)
+not a # Negation operator (lower precedence)
 ```
 [back to top](#table-of-contents)

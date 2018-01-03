@@ -331,13 +331,11 @@ a.eql?(b)       # Check if the type and value are equals
 a.equal?b       # Check if the the objects have the same id
 
 # Logical Operators
-a && b # "and" operator (higher precedence)
-a and b # "and" operator 
-
-a || b # "or" operator (higher precedence)
-a or b # "or" operator 
-
-!a # Negation operator (higher precedence)
-not a # Negation operator
+a && b          # "and" operator (higher precedence)
+a and b         # "and" operator 
+a || b          # "or" operator (higher precedence)
+a or b          # "or" operator 
+!a              # Negation operator (higher precedence)
+not a           # Negation operator
 ```
 [back to top](#table-of-contents)

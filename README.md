@@ -288,7 +288,7 @@ hash.default = "another_value"    # Changes default value
 hash.size                         # Hash size
 hash.length                       # Hash size
 hash.count                        # Hash size
-hash[1]                          # Get the value or default if key not found
+hash[1]                           # Get the value or default if key not found
 hash.clear                        # Removes all key-value pairs from hash
 hash.delete(1)                    # Deletes a key-value pair by key
 hash.empty?                       # Test if hash is empty (true or false)

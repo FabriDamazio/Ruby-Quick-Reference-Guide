@@ -350,5 +350,9 @@ a^b     # 0011 0001
 # Parallel Assignment
 a, b, c = 10, 20, 30  # a = 10, b = 20, c = 30
 a, b = b, c           # Swapping the values
+
+# Range Operators
+1..10   # Creates a range from 1 to 10 inclusive
+1...10  # Creates a range from 1 to 9
 ```
 [back to top](#table-of-contents)

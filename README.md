@@ -339,20 +339,23 @@ a or b          # "or" operator
 not a           # Negation operator
 
 # Bitwise Operators
-a = 60  # 0011 1100 in binary format
-b = 13  # 0000 1101 in binary format
+a = 60          # 0011 1100 in binary format
+b = 13          # 0000 1101 in binary format
 ------------------
-a&b     # 0000 1100
-a|b     # 0011 1101
-a^b     # 0011 0001
-~a      # 1100 0011
+a&b             # 0000 1100
+a|b             # 0011 1101
+a^b             # 0011 0001
+~a              # 1100 0011
 
 # Parallel Assignment
 a, b, c = 10, 20, 30  # a = 10, b = 20, c = 30
 a, b = b, c           # Swapping the values
 
 # Range Operators
-1..10   # Creates a range from 1 to 10 inclusive
-1...10  # Creates a range from 1 to 9
+1..10                 # Creates a range from 1 to 10 inclusive
+1...10                # Creates a range from 1 to 9
+
+# Ternary Operator
+true ? "true" : "false"   # Result is "true"
 ```
 [back to top](#table-of-contents)

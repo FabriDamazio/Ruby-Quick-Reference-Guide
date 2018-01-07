@@ -15,7 +15,7 @@ Ruby through code samples
 * [HERE Docs](#here-docs)
 * [Arrays](#arrays)
 * [Hash](#hash)
-* Ranges (TODO)
+* [Ranges](#ranges)
 * Symbols (TODO)
 * [Class](#class)
 * [Operators](#operators)
@@ -351,11 +351,26 @@ a^b             # 0011 0001
 a, b, c = 10, 20, 30  # a = 10, b = 20, c = 30
 a, b = b, c           # Swapping the values
 
-# Range Operators
-1..10                 # Creates a range from 1 to 10 inclusive
-1...10                # Creates a range from 1 to 9
-
 # Ternary Operator
 true ? "true" : "false"   # Result is "true"
+```
+[back to top](#table-of-contents)
+
+---
+
+### Ranges
+```ruby
+(1..10)                     # Creates a range from 1 to 10 inclusive
+(1...10)                    # Creates a range from 1 to 9
+('a'..'d')                  # 'a', 'b', 'c', 'd'
+(1..10).to_a                # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+('bar'..'bat').to_a         # ["bar", "bas", "bat"]
+
+# Range methods
+range1 = (1..10)            # Creates a range from 1 to 10 inclusive
+range1.include?(5)          # Return true
+range1.min                  # Return the min value
+range1.max                  # Return the max value
+range1.reject {|i| i < 5 }  # Return [5, 6, 7, 8, 9, 10]
 ```
 [back to top](#table-of-contents)

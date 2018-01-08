@@ -382,6 +382,6 @@ myString = String.new("TEST")   # Create an instance of String object
 foo = myString.downcase         # Return a downcased copy of the string
 foo = myString.upcase           # Return a upcased copy of the string
 foo = myString.capitalize       # First character converted to uppercase
-foo = myString.capitalize!      # Convert the first character to uppercase and the remainder to lowercase.
+foo = myString.capitalize!      # First character converted to uppercase with self-assignment.
 ```
 [back to top](#table-of-contents)

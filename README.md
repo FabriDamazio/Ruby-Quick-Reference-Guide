@@ -9,7 +9,7 @@ Ruby through code samples
 * [Constants](#constants)
 * [Integer Numbers](#integer-numbers)
 * [Floating Numbers](#floating-numbers)
-* Strings (TODO)
+* [Strings](#strings)
 * [Backslash Notations](#backslash-notations)
 * [Percent Literals](#percent-literals)
 * [HERE Docs](#here-docs)

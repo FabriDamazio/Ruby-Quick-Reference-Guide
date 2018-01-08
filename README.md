@@ -374,3 +374,14 @@ range1.max                  # Return the max value
 range1.reject {|i| i < 5 }  # Return [5, 6, 7, 8, 9, 10]
 ```
 [back to top](#table-of-contents)
+
+### Strings
+```ruby
+'Simple string literal'         # Simple string literal
+myString = String.new("TEST")   # Create an instance of String object
+foo = myString.downcase         # Return a downcased copy of the string
+foo = myString.upcase           # Return a upcased copy of the string
+foo = myString.capitalize       # First character converted to uppercase
+foo = myString.capitalize!      # Convert the first character to uppercase and the remainder to lowercase.
+```
+[back to top](#table-of-contents)

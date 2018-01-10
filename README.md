@@ -20,7 +20,7 @@ Ruby through code samples
 * [Class](#class)
 * [Operators](#operators)
 * Conditional Structures (TODO)
-* Loops (TODO)
+* [Loops](#loops)
 * Methods (TODO)
 * Blocks (TODO)
 * Modules (TODO)
@@ -383,5 +383,67 @@ foo = myString.downcase         # Return a downcased copy of the string
 foo = myString.upcase           # Return a upcased copy of the string
 foo = myString.capitalize       # First character converted to uppercase
 foo = myString.capitalize!      # First character converted to uppercase with self-assignment.
+```
+[back to top](#table-of-contents)
+
+---
+
+### Loops
+```ruby
+# For Statement - Executes code once for each element in expression
+for i in 1..10
+  puts i # Prints 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+end
+
+# While Statement - Executes code while the condition is true
+count = 0
+while count < 5
+  puts count # Prints 0, 1, 2, 3, 4
+  count += 1
+end
+
+# Until Statement - Executes code while the condition is false
+count = 5
+until count == 0
+  puts count # Prints 5, 4, 3, 2, 1
+  count -= 1
+end
+
+# Loop - Loops until you manually press Ctrl+C or insert a break statement inside the block
+count = 0
+loop do
+  puts count # Prints 0, 1, 2
+  count += 1
+
+  break if count == 3
+end
+
+# Each Iterator - Loops through each element inside the collection
+(1..5).each do |i|
+  puts i # Prints 1, 2, 3, 4, 5
+end
+
+# Break Statement - Leaves a block early
+for i in 1..10
+  if i == 5
+    break
+  end
+
+  puts i # Prints 1, 2, 3, 4
+end
+
+# Redo Statement - Restarts the current iteration of the most internal loop, without checking loop condition
+for i in 0..5
+  puts i #  Prints 0, 1, 2, 3, 3, 3, ... (infinite loop)
+  redo if i > 2
+end
+
+# Next Statement -Jumps to the next iteration of the most internal loop
+for i in 1..5
+  if i == 3
+    next
+  end
+  puts i # Prints 1, 2, 4, 5
+end
 ```
 [back to top](#table-of-contents)

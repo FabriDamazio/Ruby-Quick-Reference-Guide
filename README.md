@@ -25,7 +25,7 @@ Ruby through code samples
 * Blocks (TODO)
 * Modules (TODO)
 * Exceptions (TODO)
-* I/O (TODO)
+* [I/O](#io)
 
 ---
 
@@ -447,3 +447,16 @@ for i in 1..5
 end
 ```
 [back to top](#table-of-contents)
+
+---
+
+### I/O
+```ruby
+puts variable_name    # Display the value stored in the variable
+variable_name = gets  # Take any input from the user from standard screen called STDIN
+putc variable_name    # Display just one character
+print variable_name   # Display the value stored in the variable and goes to next line
+```
+[back to top](#table-of-contents)
+
+---

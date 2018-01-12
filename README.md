@@ -452,10 +452,10 @@ end
 
 ### I/O
 ```ruby
-puts variable_name    # Display the value stored in the variable
-variable_name = gets  # Take any input from the user from standard screen called STDIN
-putc variable_name    # Display just one character
-print variable_name   # Display the value stored in the variable and goes to next line
+puts variable_name    # Displays the value stored in the variable and jumps to next line
+variable_name = gets  # Takes any input from the user from standard input called STDIN
+putc variable_name    # Displays just one character
+print variable_name   # Displays the value stored in the variable (no line break)
 ```
 [back to top](#table-of-contents)
 

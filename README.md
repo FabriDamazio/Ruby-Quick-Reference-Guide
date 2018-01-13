@@ -380,9 +380,26 @@ range1.reject {|i| i < 5 }  # Return [5, 6, 7, 8, 9, 10]
 'Simple string literal'         # Simple string literal
 myString = String.new("TEST")   # Create an instance of String object
 foo = myString.downcase         # Return a downcased copy of the string
+foo = myString.downcase!        # Downcase the content of string with self-assignment
 foo = myString.upcase           # Return a upcased copy of the string
+foo = myString.upcase!          # Upcase the content of string with self-assignment
 foo = myString.capitalize       # First character converted to uppercase
 foo = myString.capitalize!      # First character converted to uppercase with self-assignment.
+foo = myString.count "T"        # Return the number of "T" character inside myString
+foo = myString.empty?           # Return true if the string has length equals 0
+foo = myString.size             # Return the number of character length
+foo = myString.reverse          # Return a new string with the characters in reverse order
+foo = myString.reverse!         # Reverse the content of string with self-assignment
+foo = myString.delete "S"       # Return a copy of all characters in intersection of its arguments deleted
+foo = myString.delete! "S"      # Perform a delete operation in string with self-assignment. Returning nil if the string was not modified.
+foo = myString.split ''         # Divides str into substrings based on a delimiter, returning an array of these substrings. 
+
+#String concatenation
+myString << "S"                 # concat string "S" directly into myString
+foo = myString + "S"            # Return a new string with concatenation of myString and "S" character
+
+#String interpolation
+"Do the unit #{foo}"            # Return a new string concatenated with foo variable.
 ```
 [back to top](#table-of-contents)
 

@@ -21,7 +21,7 @@ Ruby through code samples
 * [Operators](#operators)
 * Conditional Structures (TODO)
 * [Loops](#loops)
-* Methods (TODO)
+* [Methods](#Methods)
 * Blocks (TODO)
 * Modules (TODO)
 * Exceptions (TODO)
@@ -483,6 +483,24 @@ puts variable_name    # Displays the value stored in the variable and jumps to n
 variable_name = gets  # Takes any input from the user from standard input called STDIN
 putc variable_name    # Displays just one character
 print variable_name   # Displays the value stored in the variable (no line break)
+```
+[back to top](#table-of-contents)
+
+---
+
+---
+
+### Methods
+```ruby
+# Simple Method
+def method_name 
+end
+# Method with parameters
+def method_name (var1, var2)
+end
+# Method with parameters (with default values)
+def method_name (var1 = value1, var2 = value2)
+end
 ```
 [back to top](#table-of-contents)
 

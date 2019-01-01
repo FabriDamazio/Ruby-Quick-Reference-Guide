@@ -22,7 +22,7 @@ Ruby through code samples
 * [Conditional Structures](#conditional-structures)
 * [Loops](#loops)
 * [Methods](#Methods)
-* [Blocks] (#Blocks)
+* [Blocks](#Blocks)
 * Modules (TODO)
 * Exceptions (TODO)
 * [I/O](#io)
@@ -612,8 +612,6 @@ print variable_name   # Displays the value stored in the variable (no line break
 
 ---
 
----
-
 ### Methods
 ```ruby
 # Simple Method
@@ -732,3 +730,4 @@ puts "Value Outside the block: #{x}"
 #=> Value Inside the block: 3
 #=> Value Outside the block: Outside the block
 ```
+[back to top](#table-of-contents)

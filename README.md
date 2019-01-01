@@ -22,7 +22,7 @@ Ruby through code samples
 * [Conditional Structures](#conditional-structures)
 * [Loops](#loops)
 * [Methods](#Methods)
-* Blocks (TODO)
+* [Blocks] (#Blocks)
 * Modules (TODO)
 * Exceptions (TODO)
 * [I/O](#io)
@@ -629,3 +629,106 @@ end
 [back to top](#table-of-contents)
 
 ---
+
+---
+
+### Blocks
+```ruby
+# The block is passed a counter as a parameter.
+# Calling the "each" method with a block looks like this:
+(1..5).each do |counter|
+  puts "iteration #{counter}"
+end
+# Output:
+#=> iteration 1
+#=> iteration 2
+#=> iteration 3
+#=> iteration 4
+#=> iteration 5
+
+
+# You can also surround blocks in curly brackets:
+(1..5).each { |counter| puts "iteration #{counter}"}
+
+
+# Here’s a basic example of a multi-line block
+[1, 2, 3].each do |n|
+  # Prints out a number
+  puts "Number #{n}"
+end
+
+
+# Here’s a basic example of a inline block
+[1, 2, 3].each { |n| puts "Number #{n}" }
+
+
+# Ruby program to demonstrate how block returns the values 
+# here two methods called 'select' and 'even?' 
+# even? method is called inside the block 
+puts [1, 2, 3, 4, 5].select { |num| num.even? } 
+# Output:
+#=> iteration 12
+#=> iteration 14
+
+
+# here india_states is an array and  
+# it is the argument which is to  
+# be passed to block  
+    california_cities = ["San Diego", "Pasadena", 
+                        "Venice Beach", "Rancho Cucamonga", 
+                        "Ontario" ]  
+   
+# passing argument to block 
+california_cities.each do |california_cities| 
+ puts california_cities 
+end
+# Output:
+#=> San Diego
+#=> Pasadena
+#=> Venice Beach
+#=> Rancho Cucamonga
+#=> Ontario
+
+
+# Ruby program to demonstrate the 'yield' statement 
+# Parameters can be passed to the yield statment.
+# method 
+def method_name 
+  # statement of the method to be executed 
+  puts "Inside Method!"
+    # using yield statement 
+    yield 
+  # statement of the method to be executed  
+  puts "Again Inside Method!"
+  # using yield statement 
+  yield
+end
+  
+# block 
+method_name{puts "Inside Block!"} 
+# Output:
+#=> Inside Method!
+#=> Inside Block!
+#=> Again Inside Method!
+#=> Inside Block!
+
+
+# Ruby program to demonstrate the use of  
+# same variable outside and inside a block 
+   
+# variable 'x' outside the block  
+x = "Outside the block"
+  
+# here x is inside the block 
+4.times do |x|     
+  puts "Value Inside the block: #{x}"    
+end    
+  
+puts "Value Outside the block: #{x}"
+# Outputs:
+#=> Value Inside the block: 0
+#=> Value Inside the block: 1
+#=> Value Inside the block: 2
+#=> Value Inside the block: 3
+#=> Value Outside the block: Outside the block
+```
